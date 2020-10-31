@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XhSiow's Ecommerce Site.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>XHSiow Ecommerce site.</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<style>
+
+		.navbar-index-page-buttons > button{
+			background: white; border: 1px solid gray; border-radius: 4px;color: gray; margin-top: 10%;
+		}
+
+		.card{
+			border: 1px solid gray; border-radius: 4px; 
+		}
+		.card > img{
+			/*width: 100%;*/
+			margin-left: auto; margin-right: auto;
+		}
+		.card-content{
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+
+
+		}
+		.card-content >h3{
+			color: #f5745a;
+		}
+		.card-content > h3 >span{
+			float: right;
+
+		}
+
+		.card-content > h4 > span{
+			float: right; color: gray;
+			font-weight: bold;
+		}
+		.card-large{
+			width: 100%;
+			
+		}
+		footer{
+			
+			padding: 5% 0% 0% 5%;
+			border-top: 1px solid gray;
+			box-shadow: -0px -0.5px 100px 20px gray;
+
+		}
+		.footer-links-list li{
+			float: left;
+			margin-right: 10%;
+		}
+		.hero-image-section{
+			background-image: url('assets/Images/hero_image.jpg'); background-origin: content-box; background-position: center; background-blend-mode: darken; height: 80vh;
+			 box-shadow:inset 0 0 0 2000px #0000009e;
+		}
+
+		.hero-text{
+			width: 60%; margin-left: auto; margin-right: auto; color: white;
+		}
+
+		@media only screen and (max-width: 600px) {
+		  /* For mobile phones: */
+
+		  p{
+		  	   text-align: justify;
+    			padding: 0px 30px;
+		  }
+		  button{
+		  	margin-left: auto;
+		  	margin-right: auto;
+		  }
+		  h2{text-align: center;}
+		  .hero-text{
+		  	width: 100%;
+		  	margin-top: 40%;
+		  }
+
+		  .section-text{
+		  	text-align: center;
+		  	padding-left: 15px !important;
+		  	padding-right: 15px !important;
+		  }
+		  .section-image > img{
+		  	width: 100%;
+		  }
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default" style="margin-bottom: 0px;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+    		        <h1 class="brand brand-name navbar-left"><div class="navbar-left">Logo</h1>
+            </div>
+            <div class="collapse navbar-collapse navbar-center" id="myNavbar">
+                <!-- <ul class="nav navbar-nav">
+                  <li><a href="#intro">Home</a></li>
+           				<li><a href="#about">FAQs</a></li>
+           				<li><a href="#portfolio">About</a></li>
+            			<li><a href="#contact" style="margin-right: 50px;">Contact</a></li>
+                  <li><input type="button" name="button" value="Log Out" class="form-control" style="background:#f66c43; color: white; margin-top: 20px; padding: 10px 20px 10px 20px; font-size: 16px; height: 40px !important;"></li>
+                </ul> -->
+                <div style="display: inline-block; margin-top: 1.5%; margin-left: 10%; "> 
+                	<form class="form-inline">
+					  <div class="form-group mx-sm-3 mb-2" style="float: left;">
+					    <label for="inputPassword2" class="sr-only">Click here to Search Products</label>
+					    <input type="password" class="form-control" id="inputPassword2" placeholder="Search Here..." style="border-radius: none !important;">
+					  </div>
+					  <button type="submit" class="btn btn-primary mb-2" style="border-radius: 0px 4px 4px 0px; background:#f66c43; border-color:#f66c43;">Search</button>
+					</form>
+
+                </div>
+                <div class=" navbar-right navbar-index-page-buttons" style=""><button class="btn btn-primary" style="">Login</button> <button class="btn btn-primary"  onclick="window.location.href = 'register.html'">Sign Up</button></div>
+            </div>
+
+        </div>
+    </nav>
+    <section class="hero-image-section">
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm-12" style="text-align: center; margin-top: 15%;">
+    				<h1 class="hero-text" style="">We have dream to connect wholesalers to independent Customers</h1><br>
+    				<button class="btn btn-lg btn-primary" style="background:#f66c43; padding: 10px 25px 10px 25px;">Explore</button>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <br><br><br>
+    <section class="container">
+    	<div class="row">
+    		<h2 style="color: #f5745a;">Trending</h2>
+    		<div class="col-md-4">
+    			<div class="card" style="padding: 10px;">
+    				<img class="img img-responsive" src="assets/Images/sunglasses.jpg" alt="Sun Glasses Image">
+    				<div class="card-content">
+    					<h3>125.00 <span style="">Taobao</span></h3>
+    					<h4><b>Ray ban Sunglasses Women </b><span style="">&gt;</span></h4>
+    				</div>
+    			</div>
+    			<br>
+    		</div>
+
+    		<div class="col-md-4">
+				<div class="card" style="">
+    				<img class="img img-responsive" src="assets/Images/bicycle.jpg" alt="Beauful Bicycle">
+    				<div class="card-content">
+    					<h3>125.00 <span style="">Tmall</span></h3>
+    					<h4><b>Beauful Bicycle </b><span style="">&gt;</span></h4>
+    				</div>
+    			</div>
+    			<br>
+    		</div>
+
+			<div class="col-md-4">
+				<div class="card" style="">
+    				<img class="img img-responsive" src="assets/Images/wooden_sofa.jpg" alt="Wooden Sofa Image">
+    				<div class="card-content">
+    					<h3>125.00 <span style="">Tmall</span></h3>
+    					<h4><b>Beauful Bicycle </b><span style="">&gt;</span></h4>
+    				</div>
+    			</div>
+    			<br>	
+			</div>
+    	</div>
+    	<div class="row">
+    		<div style="margin-top: 2.5%; text-align: center;">
+    				<a href="#">Explore More &gt;</a>
+    		</div>
+    	</div>
+    </section>
+     <br><br><br><br><br><br>
+    <section class="container">
+    	<div class="row">
+    		<div class="col-md-8 section-text" style="padding-right: 10%;">
+    			<h2>Why Become a Buyer?</h2><br>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    			cillum dolore eu fugiat nulla pariatur.</p><br>
+    			<button class="btn btn-lg btn-primary" style="color: white; background: orange;">Apply to Buy</button>
+    			<br>
+    		</div>
+    		<div class="col-md-4">
+    			<div class="section-image">
+    				<img src="assets/Images/illustration.jpg" class="img img-responsive" alt="Why Become a Buyer illustration Image" />
+    			</div>
+    		</div>
+    	</div>
+    	<br><br><br><br><br>
+    	<div class="row">
+    	
+    		<div class="col-md-4">
+    			<div class="section-image">
+    				<img src="assets/Images/illustration2.jpg" class="img img-responsive" alt="Why Become a Buyer Side Image" />
+    			</div>
+    		</div>
+    		<div class="col-md-8 section-text" style="padding-left: 10%; padding-top: 3%;">
+    			<h2>Why Become a Seller?</h2><br>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    			cillum dolore eu fugiat nulla pariatur.</p><br>
+    			<button class="btn btn-lg btn-primary" style="color: white; background: orange;">Apply to Buy</button>
+    		</div>
+    	</div>
+    </section>
+    <br><br><br><br><br><br>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card" >
+					<img src="assets/Images/product_image.jpg" class="img img-responsive" alt="#">
+					<div class="card-content">
+						<h3>29,354.75 <span>Taobao</span></h3>
+						<h4>Product Name Here <span>&gt;</span></h4>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+
+							<img src="assets/Images/wooden_table.jpg" class="img img-responsive" alt="#" style="padding-top:10%;">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/purse.jpg" class="img img-responsive" alt="#">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/bed_sheet.jpg" class="img img-responsive" alt="#">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/lady_shoe.jpg" class="img img-responsive" alt="#">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br>
+	<section class="container">
+		<div class="row">
+			
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/men_shoe.jpg" class="img img-responsive" alt="#" style="">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/seat.jpg" class="img img-responsive" alt="#">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/ancient_catle.jpg" class="img img-responsive" alt="#" style="width: 100%;">
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+							<br>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="card">
+							<img src="assets/Images/vaas.jpg" class="img img-responsive" alt="#" style="margin-left: auto; margin-right: auto;">
+							<br>
+							<div class="card-content">
+								<h3>29,354.75 <span>Taobao</span></h3>
+								<h4>Product Name Here <span>&gt;</span></h4>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-large" >
+					<img src="assets/Images/tree.jpg" class="img img-responsive" alt="#">
+					<div class="card-content">
+						<h3>29,354.75 <span>Taobao</span></h3>
+						<h4>Product Name Here <span>&gt;</span></h4>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<br><br><br>
+					<img src="assets/Images/eye_glasses.jpg" class="img img-responsive" alt="#">
+					<br>
+					<div class="card-content">
+						<h3>29,354.75  <span>T-Mall</span></h3>
+						<h4>Product Name Here <span>&gt;</span></h4>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<br>
+					<img src="assets/Images/shirt.jpg" class="img img-responsive" alt="#">
+					<div class="card-content">
+						<h3>29,354.75  <span>T-Mall</span></h3>
+						<h4>Product Name Here <span>&gt;</span></h4>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<br><br>
+					<img src="assets/Images/hair_comb.jpg" class="img img-responsive" alt="#">
+					<br>
+					<div class="card-content">
+						<h3>29,354.75  <span>T-Mall</span></h3>
+						<h4>Product Name Here <span>&gt;</span></h4>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img src="assets/Images/circuit_board.jpg" class="img img-responsive" alt="#">
+					<div class="card-content">
+						<h3>29,354.75  <span>T-Mall</span></h3>
+						<h4>Product Name Here <span>&gt;</span></h4>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</section>
+	<br><br><br><br><br><br><br><br>
+	<footer class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="#" alt="XhSiow's Ecommerce Site Logo" class="img img-responsive">
+				</div>
+				<div class="col-md-8" style="">
+					<ul class="footer-links-list" style="list-style-type: none; width: 100%; margin-left: auto; margin-right: auto;">
+						<li>
+							<a href="#"> Home</a>
+						</li>
+						<li>
+							<a href="#"> FAQs</a>
+						</li>
+						<li>
+							<a href="#"> About Us</a>
+						</li>
+						<li>
+							<a href="#"> Contact Us</a>
+						</li>
+					</ul>
+					<br><br><br>
+					<p style="padding-left: 12%;">All Rights Reserved &copy; Copyright 2020</p>
+					<br><br>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

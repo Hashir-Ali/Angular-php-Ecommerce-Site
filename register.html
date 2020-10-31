@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>XHSiow Ecommerce site.</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style>
+		.login-section{
+			background: white;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10%;
+		}
+
+		.login-section label{
+			color: gray;
+		}
+
+		.login-section input[type="submit"]{
+			background:#f66c43;
+			color: white;
+		}
+
+		.form-control{
+			height: 45px !important;
+		}
+
+		.inline-link{
+			color: #f66c43;
+		}
+
+		@media only screen and (max-width: 600px) {
+		  /* For mobile phones: */
+		  .login-side-image{
+		  	height: 0px !important;
+		  	display: none;
+		  }
+		  #register-text{
+		  	font-size: 1.7em;
+		  }
+		  .login-section{
+		  	width: 75%;
+		  }
+		}
+	</style>
+</head>
+<body>
+
+
+	<section class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 login-side-image" style="background: black; height: 100vh;"></div>
+			<div class="col-md-6">
+				<div class="login-section">
+					<h1 style="text-align: center;">Welcome!</h1><br>
+					<h1 id="register-text">Register Your Account.</h1>
+					<p>Please fill the following form to register your account</p>
+					<div>
+						<form class="form">
+							<div class="form-group">
+								<label for="cust_name">Full Name:</label>
+								<input type="text" name="cust_name" class="form-control" id="cust_name" placeholder="John Doe">
+							</div>
+							<div class="form-group">
+								<label for="cust_email">Email:</label>
+								<input type="email" name="cust_email" class="form-control" id="cust_email" placeholder="abc123@gmail.com">
+							</div>
+							<div class="form-group">
+								<label for="cust_pass">Password:</label>
+								<input type="text" name="cust_pass" class="form-control" id="cust_pass" placeholder="*********">
+							</div>
+							<div class="form-group">
+								<input type="submit" class="form-control" name="submit_login" value="Register">
+							</div>
+							<div class="form-group">
+								<p>Already have an account? <a href="#" class="inline-link">Login</a></p>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
