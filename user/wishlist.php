@@ -115,15 +115,14 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-
-
-
-
-                 <!-- ============================================================== -->
-                <!-- Start User Search Result content -->
-                <!-- ============================================================== -->
-                <!-- <div class="row">
-                    
+                <div class="row">
+                    <div class="container-fluid">
+                        <h4 style="text-decoration: underline; display: inline-block;">Products wishlist: </h4>
+                        <button class="btn cart-btn-small">Clear Wishlist</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Column -->
                     <div class="col-md-4 ">
                         <div class="card">
                             <div class="card-top">
@@ -185,12 +184,12 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Column -->
                 </div>
                 
 
                 <div class="row">
-                   
+                    <!-- Column -->
                     <div class="col-md-4 ">
                         <div class="card">
                             <div class="card-top">
@@ -252,11 +251,11 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Column -->
                 </div>
 
                 <div class="row">
-                   
+                    <!-- Column -->
                     <div class="col-md-4 ">
                         <div class="card">
                             <div class="card-top">
@@ -318,190 +317,9 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div> -->
-                <!-- Row -->
-
-
-                <!-- ============================================================== -->
-                <!-- End user Search Results content-->
-                <!-- ============================================================== -->
-                    <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-4 col-xlg-3 col-md-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <center class="m-t-30"> 
-                                    <img src="#" class="img-circle " width="150" />
-                                    <h4 class="card-title m-t-10">Hanna Gover</h4>
-                                    
-                                </center>
-                            </div>
-                            <div>
-                                <hr> </div>
-                            <div class="card-body"> <small class="text-muted">Email address </small>
-                                <h6>hannagover@gmail.com</h6> <small class="text-muted p-t-30 db">Phone</small>
-                                <h6>+91 654 784 547</h6> <small class="text-muted p-t-30 db">Address</small>
-                                <h6>71 Pilgrim Avenue Chevy Chase, MD 20815</h6>
-                                
-                                <br/>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-8 col-xlg-9 col-md-7">
-                        <div class="card">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs profile-tab" role="tablist">
-                                
-                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Profile</a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Update Profile</a> </li>
-                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#updatePassword" role="tab">Update Password</a> </li>
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="home" role="tabpanel">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-4 col-xs-6 b-r"> <strong>Full Name</strong>
-                                                <br>
-                                                <p class="text-muted">Johnathan Deo</p>
-                                            </div>
-                                            <div class="col-md-4 col-xs-6 b-r"> <strong>Mobile</strong>
-                                                <br>
-                                                <p class="text-muted">(123) 456 7890</p>
-                                            </div>
-                                            <div class="col-md-4 col-xs-6 b-r"> <strong>Email</strong>
-                                                <br>
-                                                <p class="text-muted">johnathan@admin.com</p>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <strong>Permanent Address: </strong>
-                                        <p class="m-t-30">
-                                            Jonathan Street, house No. 1 <br> <br> Ascarada city, lorem Ipsum.<br> <br>
-                                        </p>
-                                        <strong>Shipping Address: </strong>
-                                        <p class="m-t-30">
-                                            Jonathan Street, house No. 1 <br> <br> Ascarada city, lorem Ipsum.<br> <br>
-                                        </p>
-                                        
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane" id="settings" role="tabpanel">
-                                    <div class="card-body">
-                                        <form class="form-horizontal form-material">
-                                            <div class="form-group">
-                                                <label class="col-md-12">First Name</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Middle Name</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Last Name</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="example-email" class="col-md-12">Email</label>
-                                                <div class="col-md-12">
-                                                    <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
-                                                </div>
-                                            </div>
-                                            <!-- <div class="form-group">
-                                                <label class="col-md-12">Password</label>
-                                                <div class="col-md-12">
-                                                    <input type="password" value="password" class="form-control form-control-line">
-                                                </div>
-                                            </div> -->
-                                            <div class="form-group">
-                                                <label class="col-md-12">Phone No</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <!-- <div class="form-group">
-                                                <label class="col-md-12">Message</label>
-                                                <div class="col-md-12">
-                                                    <textarea rows="5" class="form-control form-control-line"></textarea>
-                                                </div>
-                                            </div> -->
-                                            <div class="form-group">
-                                                <label class="col-sm-12">Select Country</label>
-                                                <div class="col-sm-12">
-                                                    <select class="form-control form-control-line">
-                                                        <option>London</option>
-                                                        <option>India</option>
-                                                        <option>Usa</option>
-                                                        <option>Canada</option>
-                                                        <option>Thailand</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <button class="btn btn-success">Update Profile</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane" id="updatePassword" role="tabpanel">
-                                    <div class="card-body">
-                                        <form class="form-horizontal form-material">
-
-                                            <div class="form-group">
-                                                <label class="col-md-12">Current Password</label>
-                                                <div class="col-md-12">
-                                                    <input type="password" placeholder="Johnathan Doe" class="form-control form-control-line" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">New password</label>
-                                                <div class="col-md-12">
-                                                    <input type="password" placeholder="Johnathan Doe" class="form-control form-control-line" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Confirm New Password</label>
-                                                <div class="col-md-12">
-                                                    <input type="password" placeholder="Johnathan Doe" class="form-control form-control-line" required>
-                                                </div>
-                                            </div>
-                                            
-                                           
-                                            
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <button class="btn btn-success">Update Password</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Column -->
                 </div>
                 <!-- Row -->
-                <!-- ============================================================== -->
-                <!-- End Page Content-->
-                <!-- ============================================================== -->
-                
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->

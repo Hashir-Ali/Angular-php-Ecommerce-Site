@@ -30,25 +30,14 @@
                         <li>
                             <a class="waves-effect waves-dark" href="./" aria-expanded="false"><i class="mdi mdi-gauge"></i><span>Personal Info </span> <span style="float: right;">&gt;</span></a>
                         </li>
-                        <!-- <li class=""> 
-                            <a class=" waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i>
-                            <span class="hide-menu">Personal Info </span></a>
-                            <ul aria-expanded="false" class="collapse" style="height: 10px;">
-                                <li><a href="index.html">Dashboard 1</a></li>
-                                <li><a href="index2.html">Dashboard 2</a></li>
-                                <li><a href="index3.html">Dashboard 3</a></li>
-                                <li><a href="index4.html">Dashboard 4</a></li>
-                                <li><a href="index5.html">Dashboard 5</a></li>
-                                <li><a href="index6.html">Dashboard 6</a></li>
-                            </ul>
-                        </li> -->
-                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-laptop-windows"></i><span class="hide-menu">Wishlist</span></a>
+                       
+                        <li> <a class="waves-effect waves-dark" href="Wishlist.php" aria-expanded="false"><i class="mdi mdi-laptop-windows"></i><span class="hide-menu">Wishlist</span></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Cart</span></a>
+                            <a class="waves-effect waves-dark" href="cart.php" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Cart</span></a>
                         </li>
                         <li>
-                            <a class=" waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">My Orders</span></a>
+                            <a class=" waves-effect waves-dark" href="orders.php" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">My Orders</span></a>
                         </li>
                         <li>
                             <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Top Up Amount</span></a>
@@ -63,7 +52,7 @@
                             <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Request Withdrawal</span></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Log Out</span></a>
+                            <a class="waves-effect waves-dark" href="logout.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Log Out</span></a>
                         </li>
                         
                     </ul>
