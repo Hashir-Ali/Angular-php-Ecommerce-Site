@@ -360,6 +360,7 @@
                                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Profile</a> </li>
                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Update Profile</a> </li>
                                  <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#updatePassword" role="tab">Update Password</a> </li>
+                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#updateBank" role="tab">Banking Details</a> </li>
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content">
@@ -387,6 +388,10 @@
                                         <strong>Shipping Address: </strong>
                                         <p class="m-t-30">
                                             Jonathan Street, house No. 1 <br> <br> Ascarada city, lorem Ipsum.<br> <br>
+                                        </p>
+                                        <strong>Banking Details: </strong>
+                                        <p class="m-t-30">
+                                            Askari Bank pvt ltd. Main Branch Kohat<br> <br>12333-1233123-12312<br> <br>
                                         </p>
                                         
                                         
@@ -487,6 +492,40 @@
                                             <div class="form-group">
                                                 <div class="col-sm-12">
                                                     <button class="btn btn-success">Update Password</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="updateBank" role="tabpanel">
+                                    <div class="card-body">
+                                        <form class="form-horizontal form-material">
+
+                                            <div class="form-group">
+                                                <label class="col-md-12">Bank Name</label>
+                                                <div class="col-md-12">
+                                                    <input type="password" placeholder="Johnathan Doe" class="form-control form-control-line" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12">Branch Name</label>
+                                                <div class="col-md-12">
+                                                    <input type="password" placeholder="Johnathan Doe" class="form-control form-control-line" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12">Account Number</label>
+                                                <div class="col-md-12">
+                                                    <input type="password" placeholder="Johnathan Doe" class="form-control form-control-line" required>
+                                                </div>
+                                            </div>
+                                            
+                                           
+                                            
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <button class="btn btn-success">Update Now</button>
                                                 </div>
                                             </div>
                                         </form>

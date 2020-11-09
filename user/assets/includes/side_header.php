@@ -40,16 +40,16 @@
                             <a class=" waves-effect waves-dark" href="orders.php" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">My Orders</span></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Top Up Amount</span></a>
+                            <a class="waves-effect waves-dark" href="topup-amount.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Top Up Amount</span></a>
                         </li>
                          <li>
-                            <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Manage Products</span></a>
+                            <a class="waves-effect waves-dark" href="manage-products.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Manage Products</span></a>
                         </li>
                          <li>
-                            <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Manage Sales</span></a>
+                            <a class="waves-effect waves-dark" href="manage-sales.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Manage Sales</span></a>
                         </li>
                          <li>
-                            <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Request Withdrawal</span></a>
+                            <a class="waves-effect waves-dark" href="#" aria-expanded="false" onclick="alert('not enough funds to request a Withdrawal.');"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Request Withdrawal</span></a>
                         </li>
                         <li>
                             <a class="waves-effect waves-dark" href="logout.php" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="'hide-menu">Log Out</span></a>
