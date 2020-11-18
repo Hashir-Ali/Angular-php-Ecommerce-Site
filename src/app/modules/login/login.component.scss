@@ -1,0 +1,38 @@
+.login-section{
+    background: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.login-section label{
+    color: gray;
+}
+
+.login-section input[type="submit"]{
+    background:#f66c43;
+    color: white;
+}
+
+.form-control{
+    height: 45px !important;
+}
+
+.inline-link{
+    color: #f66c43;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .login-side-image{
+      height: 0px !important;
+      display: none;
+  }
+  #register-text{
+      font-size: 1.7em;
+  }
+  .login-section{
+      width: 75%;
+  }
+}

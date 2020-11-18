@@ -1,0 +1,28 @@
+.card{
+    padding: 10px 30px;
+}
+.card-top{
+    margin-top: 20px;
+}
+.card-bottom{
+    padding: 0px 20px;
+}
+
+.card-bottom > h4 {font-weight: 700; text-align: center;}
+
+.card-buttons > .btn-outline{
+    display: inline-block; 
+   // float: left; 
+    width: 100%;
+    background: orange; padding-left: 15px; padding-right: 15px; background: transparent; color:#f66c43; border-color:#f66c43; font-weight: bold;
+}
+
+.site-label{
+    float: right; color: #f66c43;
+    font-weight: bold;
+}
+
+.cart-btn-small{
+    display: none;
+    background: white; border: 1px solid gray; border-radius: 4px; width: 25%; height: 55px; float: right;
+}
