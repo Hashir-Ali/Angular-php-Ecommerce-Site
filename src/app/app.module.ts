@@ -16,6 +16,12 @@ import { RegisterComponent } from '../app/modules/register/register.component';
 import { AuthGuard } from './core/guards/auth.guard';
 import { UserModule } from './modules/admin/user/user.module';
 import { WishlistComponent } from './modules/admin/user/pages/wishlist/wishlist.component';
+import { RequestWithdrawalComponent } from './modules/admin/user/pages/request-withdrawal/request-withdrawal.component';
+import { ManageSalesComponent } from './modules/admin/user/pages/manage-sales/manage-sales.component';
+import { ManageProductsComponent } from './modules/admin/user/pages/manage-products/manage-products.component';
+import { TopUpAmountComponent } from './modules/admin/user/pages/top-up-amount/top-up-amount.component';
+import { MyOrdersComponent } from './modules/admin/user/pages/my-orders/my-orders.component';
+import { CartComponent } from './modules/admin/user/pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +43,38 @@ import { WishlistComponent } from './modules/admin/user/pages/wishlist/wishlist.
       {path: '', component: HomeComponent },
       {path: 'login', component: LoginComponent},
       {path: 'user/:id', component: UserComponent,canActivate: [AuthGuard]},
-      {path: 'whislist', component: WishlistComponent},
+      {path: 'wishlist', component: WishlistComponent},
       {path: 'register', component: RegisterComponent},
+      {
+				path: 'cart',
+				
+				component: CartComponent,
+      },
+      {
+				path: 'my-orders',
+				
+				component: MyOrdersComponent,
+      },
+      {
+				path: 'top-up-amount',
+				
+				component: TopUpAmountComponent,
+      },
+      {
+				path: 'manage-products',
+				
+				component: ManageProductsComponent,
+      },
+      {
+				path: 'manage-sales',
+				
+				component: ManageSalesComponent,
+      },
+      {
+				path: 'request-withdrawal',
+				
+				component: RequestWithdrawalComponent,
+      },
       // otherwise redirect to home
     { path: '**', redirectTo: '' }
     ])
