@@ -25,13 +25,14 @@ constructor(
 ngOnInit() {
   this.loadForm();
 }
-get id() { return this.angForm.get('UserId'); }
+
 loadForm() {
   this.loginForm = this.fb.group({
     email: ['', [Validators.required]],
     password: ['', [Validators.required, Validators.minLength(6)]]
   });
 }
+get userControl() { return this.angForm.controls; }
 postdata(angForm1)
 {
 this.dataService.userlogin(angForm1.value.email,angForm1.value.password)
@@ -39,7 +40,7 @@ this.dataService.userlogin(angForm1.value.email,angForm1.value.password)
 .subscribe(
 data => {
 const redirect = this.dataService.redirectUrl ? this.dataService.redirectUrl : '/user';
-this.router.navigate(['/user','7']);
+this.router.navigate(['/user','id']);
 console.log(data);
 },
 error => {

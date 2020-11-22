@@ -13,7 +13,7 @@ import { WishlistComponent } from './pages/wishlist/wishlist.component';
 
 const routes: Routes = [
   {
-		path: 'user' ,
+		path: 'user/:id' ,
 		children: [
 			{
 				path: '',

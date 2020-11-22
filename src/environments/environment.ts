@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost/angpro/public'
+  apiUrl: 'http://localhost:4200'
 };
 
 /*

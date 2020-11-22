@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://chetsapp.de:8891'
+  apiUrl: 'http://localhost:4200'
 };

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,8 @@ import { ManageProductsComponent } from './modules/admin/user/pages/manage-produ
 import { TopUpAmountComponent } from './modules/admin/user/pages/top-up-amount/top-up-amount.component';
 import { MyOrdersComponent } from './modules/admin/user/pages/my-orders/my-orders.component';
 import { CartComponent } from './modules/admin/user/pages/cart/cart.component';
+import { SupportComponent } from './modules/admin/support/pages/support/support.component';
+import { SupportModule } from './modules/admin/support/support.module';
 
 @NgModule({
   declarations: [
@@ -36,13 +39,20 @@ import { CartComponent } from './modules/admin/user/pages/cart/cart.component';
   imports: [
     BrowserModule,
     FormsModule,
+    SupportModule,
     UserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot({
+			positionClass: 'toast-top-center',
+			preventDuplicates: true,
+			progressBar: true
+		}),
     RouterModule.forRoot([
       {path: '', component: HomeComponent },
       {path: 'login', component: LoginComponent},
       {path: 'user/:id', component: UserComponent,canActivate: [AuthGuard]},
+      {path: 'support', component: SupportComponent},
       {path: 'wishlist', component: WishlistComponent},
       {path: 'register', component: RegisterComponent},
       {
