@@ -19,9 +19,9 @@
                 <form class="form-inline">
                   <div class="form-group mx-sm-3 mb-2" style="float: left;">
                     <label for="inputPassword2" class="sr-only">Click here to Search Products</label>
-                    <input type="password" class="form-control" id="inputPassword2" placeholder="Search Here..." style="border-radius: none !important;">
+                    <input type="text" #searchvalue class="form-control" id="inputPassword2" placeholder="Search Here..." style="border-radius: none !important;">
                   </div>
-                  <button type="submit" class="btn btn-primary mb-2" style="border-radius: 0px 4px 4px 0px; background:#f66c43; border-color:#f66c43;">Search</button>
+                  <a class="btn btn-primary mb-2" (click)="serachItems(searchvalue.value)" style="border-radius: 0px 4px 4px 0px; background:#f66c43; border-color:#f66c43;">Search</a>
                 </form>
 
             </div>
@@ -41,6 +41,21 @@
     </div>
 </section>
 <br><br><br>
+<section class="container" #searchDiv  [hidden]="searchedItems.length < 0">
+    <div class="row">
+        <h2 style="color: #f5745a;">Search Results</h2>
+        <div class="col-md-4" *ngFor="let item of searchedItems">
+            <div class="card" style="padding: 10px;">
+                <img class="img img-responsive" src="{{item.pic}}" alt="Sun Glasses Image">
+                <div class="card-content">
+                    <h3>{{item.price}}.00 <span  >{{item.shop_title}}</span></h3>
+                    <h4><b>{{item.title}} </b><span  >&gt;</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <br><br><br><br><br><br>
 <section class="container">
     <div class="row">
         <h2 style="color: #f5745a;">Trending</h2>

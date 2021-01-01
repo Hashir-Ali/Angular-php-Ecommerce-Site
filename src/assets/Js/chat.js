@@ -5,19 +5,19 @@ $(function () {
 
     "use strict";
 
-    $('.chat-left-inner > .chatonline').slimScroll({
-        height: '100%',
-        position: 'right',
-        size: "5px",
-        color: '#dcdcdc'
+    // $('.chat-left-inner > .chatonline').slimScroll({
+    //     height: '100%',
+    //     position: 'right',
+    //     size: "5px",
+    //     color: '#dcdcdc'
 
-    });
-    $('.chat-list').slimScroll({
-        position: 'right'
-        , size: "5px"
-        , height: '100%'
-        , color: '#dcdcdc'
-     });
+    // });
+    // $('.chat-list').slimScroll({
+    //     position: 'right'
+    //     , size: "5px"
+    //     , height: '100%'
+    //     , color: '#dcdcdc'
+    //  });
     
     var cht = function () {
             var topOffset = 445;
