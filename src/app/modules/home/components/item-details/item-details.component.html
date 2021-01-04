@@ -1,0 +1,97 @@
+<nav class="navbar navbar-default" style="margin-bottom: 0px;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+                <h1 class="brand brand-name navbar-left"><div class="navbar-left">Logo</div></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-center" id="myNavbar">
+            <!-- <ul class="nav navbar-nav">
+              <li><a href="#intro">Home</a></li>
+                       <li><a href="#about">FAQs</a></li>
+                       <li><a href="#portfolio">About</a></li>
+                    <li><a href="#contact" style="margin-right: 50px;">Contact</a></li>
+              <li><input type="button" name="button" value="Log Out" class="form-control" style="background:#f66c43; color: white; margin-top: 20px; padding: 10px 20px 10px 20px; font-size: 16px; height: 40px !important;"></li>
+            </ul> -->
+            <div style="display: inline-block; margin-top: 1.5%; margin-left: 10%; "> 
+                <form class="form-inline">
+                  <div class="form-group mx-sm-3 mb-2" style="float: left;">
+                    <label for="inputPassword2" class="sr-only">Click here to Search Products</label>
+                    <input type="text" #searchvalue class="form-control" id="inputPassword2" placeholder="Search Here..." style="border-radius: none !important;">
+                  </div>
+                  <a class="btn btn-primary mb-2" style="border-radius: 0px 4px 4px 0px; background:#f66c43; border-color:#f66c43;">Search</a>
+                </form>
+
+            </div>
+            <div class=" navbar-right navbar-index-page-buttons"  ><button class="btn btn-primary"  [routerLink]="['/login']">Login</button> <button class="btn btn-primary" [routerLink]="['/register']">Sign Up</button></div>
+        </div>
+
+    </div>
+</nav>
+ <br><br><br><br><br><br>
+<section class="container">
+    <div class="row">
+    
+        <div class="col-md-4">
+            <div class="section-image">
+                <img src="{{item_details?.item?.images[0]}}" class="img img-responsive" alt="Why Become a Buyer Side Image" />
+            </div>
+        </div>
+        <div class="col-md-8 section-text" style="padding-left: 10%; padding-top: 1%;">
+            <h1>{{item_details?.item?.title}}</h1>
+            <h4>{{item_details?.seller?.sellernick}} </h4>
+            <!-- <h4>Sales: </h4> -->
+            <h4>{{item_details?.item?.price}} </h4>
+            <h4>{{item_details?.delivery?.from}} </h4>
+            <br>
+            <button class="btn btn-lg btn-primary" style="color: white; background: orange;">Order Now</button>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+<section class="container">
+    <h1><u>Other Images:</u></h1><br>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let img of item_details?.item?.images">
+            <div class="card">
+                <br><br><br>
+                <img src="{{img}}" class="img img-responsive" alt="#">
+                <br>
+            </div>
+            <br>
+        </div>
+    </div>
+</section>
+
+<br><br><br><br><br><br><br><br>
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="#" alt="XhSiow's Ecommerce Site Logo" class="img img-responsive">
+            </div>
+            <div class="col-md-8" style="">
+                <ul class="footer-links-list" style="list-style-type: none; width: 100%; margin-left: auto; margin-right: auto;">
+                    <li>
+                        <a href="#"> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"> FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#"> About Us</a>
+                    </li>
+                    <li>
+                        <a href="#"> Contact Us</a>
+                    </li>
+                </ul>
+                <br><br><br>
+                <p style="padding-left: 12%;">All Rights Reserved &copy; Copyright 2020</p>
+                <br><br>
+            </div>
+            
+        </div>
+    </div>
+</footer>

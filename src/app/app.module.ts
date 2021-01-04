@@ -25,6 +25,7 @@ import { MyOrdersComponent } from './modules/admin/user/pages/my-orders/my-order
 import { CartComponent } from './modules/admin/user/pages/cart/cart.component';
 import { SupportComponent } from './modules/admin/support/pages/support/support.component';
 import { SupportModule } from './modules/admin/support/support.module';
+import { ItemDetailsComponent } from './modules/home/components/item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SupportModule } from './modules/admin/support/support.module';
     AboutComponent,
     PartyComponent,
     ContactComponent,
-    RegisterComponent
+    RegisterComponent,
+    ItemDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +52,7 @@ import { SupportModule } from './modules/admin/support/support.module';
 		}),
     RouterModule.forRoot([
       {path: '', component: HomeComponent },
+      {path: 'item-details/:uuid', component: ItemDetailsComponent },
       {path: 'login', component: LoginComponent},
       {path: 'user/:id', component: UserComponent,canActivate: [AuthGuard]},
       {path: 'support', component: SupportComponent},

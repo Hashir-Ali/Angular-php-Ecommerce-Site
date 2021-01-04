@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PartyComponent } from './components/party/party.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+
 @NgModule({
   declarations: [HomeComponent, AboutComponent, PartyComponent, ContactComponent],
   imports: [
